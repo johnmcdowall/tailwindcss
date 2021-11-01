@@ -2,6 +2,7 @@ export const env = {
   TAILWIND_MODE: process.env.TAILWIND_MODE,
   NODE_ENV: process.env.NODE_ENV,
   DEBUG: process.env.DEBUG !== undefined && process.env.DEBUG !== '0',
+  ALWAYS_RECREATE_CONTEXT: process.env.ALWAYS_RECREATE_CONTEXT !== undefined && process.env.ALWAYS_RECREATE_CONTEXT !== '0',
   TAILWIND_DISABLE_TOUCH: process.env.TAILWIND_DISABLE_TOUCH !== undefined,
   TAILWIND_TOUCH_DIR: process.env.TAILWIND_TOUCH_DIR,
 }
