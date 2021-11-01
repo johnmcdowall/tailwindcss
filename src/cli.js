@@ -19,6 +19,7 @@ import normalizePath from 'normalize-path'
 
 let env = {
   DEBUG: process.env.DEBUG !== undefined && process.env.DEBUG !== '0',
+  ALWAYS_RECREATE_CONTEXT: process.env.ALWAYS_RECREATE_CONTEXT !== undefined && process.env.ALWAYS_RECREATE_CONTEXT !== '0',
 }
 
 // ---
