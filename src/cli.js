@@ -622,6 +622,11 @@ async function build() {
               console.error('Rebuilding...')
 
               return () => {
+                if(env.ALWAYS_RECREATE_CONTEXT) {
+                  context = null;
+                  console.log('Force re-creating a new context...')
+                }
+
                 if (context !== null) {
                   context.changedContent = changedContent.splice(0)
                   return context
